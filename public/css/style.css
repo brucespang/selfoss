@@ -364,6 +364,7 @@ input {
 .entry ,
 .source {
     margin:1px 50px 3px 5px;
+    padding: 5px 5px 0px 5px;
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
     -khtml-border-radius:4px;
