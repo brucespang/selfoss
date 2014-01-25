@@ -27,6 +27,7 @@
      class="entry
             <?PHP echo $this->item['unread']==1 ? 'unread' : ''; ?>">
 
+    <div class="entry-head">
     <!-- icon -->
     <a href="<?PHP echo \helpers\Anonymizer::anonymize($this->item['link']); ?>" class="entry-icon">
         <?PHP if(strlen(trim($this->item['icon']))>0 && $this->item['icon']!="0") : ?>
@@ -60,6 +61,7 @@
         <a href="<?PHP echo \helpers\Anonymizer::anonymize($this->item['link']); ?>" target="_blank"><img src="<?PHP echo 'thumbnails/'.$this->item['thumbnail']; ?>" alt="<?PHP echo $this->item['title']; ?>" /></a>
     </div>
     <?PHP endif; ?>
+    </div>
 
     <!-- content -->
     <div class="entry-content <?PHP if(strlen(strip_tags($content))<500) : ?>entry-content-short<?PHP endif; ?>">
